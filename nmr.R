@@ -1,5 +1,5 @@
 library(edgeR)
-x <- read.delim("mouseexpression.txt",row.names="Ensembl")
+x <- read.delim("nmrexpression.txt",row.names="gene")
 treat<- factor(c("A","A","A","B","B","B","C","C","C","D","D","D","E","E","E","F","F","F"))
 time=factor(c("8","8","8","8","8","8","8","8","8","48","48","48","48","48","48","48","48","48"))
 repli=factor(c("1","2","3","1","2","3","1","2","3","1","2","3","1","2","3","1","2","3"))
