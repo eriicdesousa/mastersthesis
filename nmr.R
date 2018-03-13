@@ -1,6 +1,6 @@
 library(edgeR)
 x <- read.delim("mouseexpression.txt",row.names="Ensembl")
-treat<- factor(c("AN108CO","AN208CO","AN308CO","BN108CA","BN208CA","BN308CA","CN108CH","CN208CH","CN308CH","DN148CO","DN248CO","DN348CO","EN148CA","EN248CA","EN348CA","FN148CH","FN248CH","FN348CH"))
+treat<- factor(c("A","A","A","B","B","B","C","C","C","D","D","D","E","E","E","F","F","F"))
 time=factor(c("8","8","8","8","8","8","8","8","8","48","48","48","48","48","48","48","48","48"))
 repli=factor(c("1","2","3","1","2","3","1","2","3","1","2","3","1","2","3","1","2","3"))
 y <- DGEList(counts=x) 
